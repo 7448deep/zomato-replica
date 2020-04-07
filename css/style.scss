@@ -1,3 +1,793 @@
-@use './reset.scss';
 
-/* Add your css here */
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* user story1  */
+.h-container {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    background-color: honeydew;
+    align-items: center;
+    /* border: 1px solid orangered; */
+}
+
+.navleft {
+    /* border: 2px solid red; */
+    flex-basis: 10%;
+
+}
+
+.navleft a {
+    text-decoration: none;
+
+}
+
+.navleftcontent {
+    display: inline-block;
+    /* border: 2px solid red; */
+    /* padding: 6px 0px; */
+    /* flex-wrap: wrap; */
+    margin: 10px 3px;
+}
+
+.navright {
+    flex-basis: 90%;
+    /* border: 2px solid red; */
+
+
+}
+
+.navright ul {
+    float: right;
+}
+
+.navright ul li {
+    display: inline-flex;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.navright a {
+    padding: 2px 2px;
+    border: 1px solid black;
+    text-decoration: none;
+    clear: both;
+
+}
+
+/* user story 1 ends  */
+
+
+/* user story 2 */
+.banner {
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+
+}
+
+.login {
+    /* display: flex; */
+
+    text-align: right;
+    align-items: center;
+    color: white;
+    margin: 1rem 2rem;
+    justify-content: space-around;
+}
+
+.login a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1rem;
+}
+
+#creatacc {
+    border: 2px solid white;
+
+}
+
+.story2 {
+    display: block;
+    width: 96%;
+    margin: auto;
+    /* border: 2px solid red; */
+    padding: 80px 2px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.city {
+    display: inline-block;
+}
+
+#city {
+    /* background-color: rgba(195, 236, 238, 0.863); */
+    border-radius: 3px;
+    padding: 6px 10px;
+    border: none;
+
+
+}
+
+.search-restaurant {
+    display: inline-block;
+    /* margin-right: 40px; */
+
+}
+
+#search-rest {
+
+    /* background-color:skyblue ; */
+    border: none;
+    border-radius: 3px;
+    padding: 5px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.searchbutton {
+    display: inline-block;
+    /* margin: 4px 3px; */
+}
+
+#search-btn {
+    background-color: #cb202d;
+    border-radius: 3px;
+    border: none;
+    padding: 6px 10px;
+
+}
+
+/* user story 2 ends  */
+
+
+
+
+.background {
+    background-color: #cecece;
+}
+
+/* user story (main) 3 */
+.story3cont {
+    display: grid;
+    grid-template-columns: 68% 30%;
+    /* background-color: rgb(112, 36, 36); */
+    grid-column-gap: 1%;
+    grid-row-gap: 10px;
+    padding: 5px;
+}
+
+
+.story3item {
+    /* background-color: rgba(86, 223, 45, 0.8); */
+    /* border: 1px solid black; */
+    padding: 0px;
+    font-size: 20px;
+
+}
+
+
+/* user story 3 leftright  */
+.collection {
+    /* border: 1px solid skyblue; */
+    display: inline-flex;
+    width: 100%;
+}
+
+.collectionleft {
+    /* flex-wrap: wrap; */
+    flex-basis: 70%;
+    /* border: 3px solid rgb(102, 226, 19); */
+}
+.adzomato {
+    text-align: center;
+    /* justify-content: center;  */
+    width: 80;
+    /* border: 1px solid orangered; */
+}
+
+
+.adzomato img {
+    width: 100%;
+}
+
+.collectionheding p{
+  font-size: smaller;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* background-color: gray; */
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 5px;
+}
+
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid black; */
+    padding: 0px;
+    font-size: 20px;
+    /* text-align: center;  */
+    display: flex;
+}
+
+.griditem1 {
+    flex-basis: 40%;
+}
+
+.griditem1 img {
+    height: 100%;
+    width: 100%;
+    /* padding: 0px 0px; */
+}
+
+.griditem2 {
+    flex-basis: 60%;
+    padding: 0em 0.5em;
+    font-size: 14px;
+}
+
+.collastdiv {
+    /* border: 1px solid orangered; */
+    text-align: center;
+    
+}
+.collastdiv p{
+    background-color: #fff;
+    /* border: 1px solid black; */
+
+font-size: 80%;
+padding: 0% 2%;
+}
+
+.collectionright {
+width: 100%;
+    /* border: 3px solid orangered; */
+    text-align: center;
+    display: inline-block;
+    padding: 0% 0.5%;
+    background-color: #fff;
+}
+
+
+.collectionright #subtitle {
+    color: #89959B;
+}
+
+.widgetcont {
+    /* border: 1px solid rgb(226, 43, 58); */
+    padding: 0% 2%;
+    padding-bottom: 10%;
+
+}
+
+.widget {
+    margin: 0% 1%;
+    /* border: 1px solid rgb(219, 201, 34); */
+}
+
+.textdetectcont {
+     border: 1px solid rgb(37, 37, 37);
+    
+    width: 97%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-delcontainer {
+
+    flex-basis: 78%;
+}
+
+.detect-btncontainer {
+
+    flex-basis: 20%;
+
+}
+
+#search-del {
+    color: #89959B;
+    padding: 3%;
+    /* position: relative; */
+    width: 86%;
+    border: none;
+}
+
+.detect-btn {
+    padding: 10% 10%;
+    /* position: relative; */
+    width: 100%;
+}
+
+.orderbtncont {
+    width: 100%;
+}
+
+.order-btn {
+    margin: 1% 1%;
+    width: 97%;
+    background-color: #069e44;
+    border-style: none;
+    padding: 3% 0%;
+    border-radius: 4px;
+}
+
+.dispara p {
+    color: green;
+    text-align: center;
+}
+
+/* user story 3 leftright end  */
+
+/* user story (main) 3 end  */
+
+
+
+
+/* user story 4  */
+.categories {
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    margin: 0px 1em;
+}
+
+#cat-title {
+    margin: 1px 1px;
+}
+
+#cat-subtitle {
+    font-size: 0.8em;
+    margin: 1px 1px;
+}
+
+.category-list {
+
+    background-color: #ffff;
+    display: flex;
+    flex-flow: row;
+    padding: 0px 0px;
+    margin: 0px 0px;
+
+}
+
+.item1 {
+    text-align: center;
+    font-size: 11px;
+    list-style: none;
+    /* border: solid green; */
+    margin: 2px 2px;
+    padding: 20px 1px;
+    width: 12.5%;
+    box-sizing: border-box;
+}
+
+.item1 img {
+    height: 50%;
+    width: 40%;
+    border: 1px solid green;
+}
+
+/* user story 4 ends  */
+/* user story 5  */
+.localities {
+
+    padding: 1rem 0rem;
+    margin: 0em 1em;
+}
+
+.listcont {
+    background-color: #ffff;
+
+    display: inline-flex;
+    /* display: inline-block; */
+    width: 100%;
+    padding: 1em 0.1em;
+}
+
+.insidelistcont {
+    /* border-left: 1px solid sienna; */
+    font-size: 0.7em;
+    width: 33%;
+}
+
+.locality-list {
+    list-style: none;
+    margin: 0px 0px;
+    padding: 5px 5px;
+    line-height: 2em;
+    font-size: smaller;
+}
+
+/* user story 5 end  */
+/* user story 6 */
+
+
+.footer-wrapper {
+    background-color: #282c35;
+    color: white;
+    padding: 1em 1em;
+    /* margin: 0em 1em; */
+}
+
+.logoandcity {
+
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+
+    flex-basis: 50%;
+}
+
+.logo img {
+    padding: 0.5em 0.5em;
+    height: 65px;
+    width: 65px;
+
+}
+
+.footcity {
+    box-sizing: border-box;
+    text-align: right;
+    flex-basis: 50%;
+    padding: 1% 1%;
+}
+
+.footcity #city {
+    padding: 0.5em 1em;
+    background-color: rgb(14, 13, 13);
+    color: white;
+}
+
+
+.aboutcont {
+
+    display: inline-flex;
+    width: 100%;
+    padding: 1em 0.1em;
+}
+
+.aboutlist {
+    list-style: none;
+    width: 28%;
+    font-size: 0.7em;
+    line-height: 1.5rem;
+    padding: 10px;
+}
+
+.aboutlist1 {
+    list-style: none;
+    width: 16%;
+    font-size: 0.7em;
+    line-height: 1.5rem;
+    padding: 10px;
+}
+
+.aboutlist h3 {
+    font-size: 1.2em;
+}
+
+.contries h4 {
+    margin: 1px 1px;
+    padding: 1px 1px;
+}
+
+
+.contrycont {
+
+    display: inline-flex;
+    width: 100%;
+    padding: 0.5em 0.1em;
+}
+
+.contrylist {
+    list-style: none;
+    width: 20%;
+    font-size: 0.7em;
+    line-height: 1.5rem;
+    padding: 10px;
+}
+
+
+.policyandicon {
+    display: flex;
+    align-items: center;
+}
+
+.policy {
+
+    display: inline-flex;
+    list-style: none;
+    flex-basis: 80%;
+    /* float: left; */
+    font-size: 0.8em;
+}
+
+.policy li {
+
+    padding: 5px 5px;
+}
+
+.socialicon {
+    flex-basis: 20%;
+    text-align: right;
+    display: inline-flex;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 1rem;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    background-color: black;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: black;
+    color: white;
+}
+
+.fa-twitter {
+    background: black;
+    color: white;
+}
+
+.fa-instagram {
+    background: black;
+    color: white;
+}
+
+.termcondition {
+    font-size: 0.7em;
+    padding: 1em 1em;
+}
+
+/* user story 6 end  */
+
+
+
+
+
+
+
+
+
+/* mobile view  */
+@media only screen and (max-width: 420px) {
+
+    /* user story 1 */
+
+
+    .navright ul {
+        margin-left: 30px;
+        float: none;
+    }
+
+    .navright ul li {
+        display: block;
+        padding: 2px -2px;
+        margin-bottom: 10px;
+
+    }
+
+    .navleft {
+        /* border: 2px solid red; */
+        flex-basis: 30%;
+
+    }
+
+    .navright {
+        flex-basis: 70%;
+
+        /* text-align: center; */
+
+
+    }
+
+    /* user story 1 end  */
+    /* user story 2 */
+
+    .city {
+
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    #city {
+        width: 100%;
+    }
+
+    .search-restaurant {
+        /* display: inline-block; */
+        /* margin: 4px 5px; */
+        width: 100%;
+        /* margin-right: 0px; */
+
+
+    }
+
+    #search-rest {
+
+        /* background-color: rgb(205, 235, 36); */
+        border: none;
+        border-radius: 3px;
+        padding: 5px 20px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .searchbutton {
+        width: 100%;
+    }
+
+    #search-btn {
+        width: 100%;
+        /* margin-bottom: 5px; */
+    }
+
+    /* user story 2 end */
+    /* user story 3 */
+    .story3cont {
+        display: grid;
+        grid-template-columns: auto;
+        /* background-color: palevioletred; */
+        /* grid-column-gap: 10px; */
+        grid-row-gap: 10px;
+        padding: 5px;
+    }
+
+
+    .story3item {
+        /* background-color: rgba(255, 255, 255, 0.8); */
+        /* border: 1px solid black; */
+        padding: 0px;
+        /* font-size: 1.5rem */
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        /* background-color: palevioletred; */
+        /* grid-column-gap: 10px; */
+        grid-row-gap: 10px;
+        padding: 5px;
+    }
+
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid black;
+        padding: 0px;
+        /* font-size: 1.5rem */
+
+    }
+    .collectionright
+    {
+        background-color: #fff;
+    }
+
+    /* user story 3 end */
+    /* user story 4  */
+    .item1 {
+        font-size: 8px;
+        width: 22%;
+        box-sizing: border-box;
+    }
+
+    .category-list {
+
+        flex-wrap: wrap;
+    }
+
+    /* user story 4 ends  */
+    /* user story 5 */
+    .localities {
+
+        padding: 1rem 0.5rem;
+    }
+
+    .listcont {
+
+        /* display: inline-flex; */
+        display: inline-block;
+        width: 100%;
+        padding: 1em 0.1em;
+    }
+
+    .insidelistcont {
+
+        font-size: 1em;
+        width: 100%;
+
+    }
+
+    .locality-list {
+        list-style: none;
+        margin: 0px 0px;
+        padding: 2em 2em;
+        line-height: 2em;
+    }
+
+    /* user story 5 end  */
+    /* user story 6 */
+    .policy {
+
+        display: inline;
+        list-style: none;
+        flex-basis: 80%;
+        padding-left: 1em;
+        /* float: left; */
+    }
+
+    .socialicon {
+        flex-basis: 20%;
+        text-align: right;
+        display: inline;
+        padding-right: 1em;
+    }
+
+    .aboutcont {
+
+        display: flex;
+        width: 100%;
+        padding: 1em 0.1em;
+        flex-wrap: wrap;
+    }
+
+    .aboutlist {
+        list-style: none;
+        width: 45%;
+        font-size: 0.7em;
+        line-height: 1rem;
+        padding: 1em 0em;
+        padding-left: 10px;
+    }
+
+    .aboutlist1 {
+        list-style: none;
+        width: 100%;
+        font-size: 0.7em;
+        line-height: 1rem;
+        padding: 10px;
+    }
+
+    .contrycont {
+
+        display: flex;
+        width: 100%;
+        padding: 1em 0.1em;
+        flex-wrap: wrap;
+    }
+
+    .contrylist {
+        list-style: none;
+        width: 45%;
+        font-size: 0.7em;
+        line-height: 1rem;
+        padding: 1em 0em;
+        padding-left: 10px;
+    }
+
+    /* user story 6 end  */
+
+}
